@@ -19,5 +19,5 @@ Route::get('/ep', function () {
     return view('econprodigy');
 });
 
-Route::post('/ep', 'registerController@form');
+Route::post('/ep', 'RegisterController@form');
 
