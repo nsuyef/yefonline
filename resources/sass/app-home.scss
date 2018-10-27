@@ -1,0 +1,82 @@
+#homepage {
+
+    .loader {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: #222222;
+    
+        .spinner {
+            width: 40px;
+            height: 40px;
+            margin: 100px auto;
+            background-color: white;
+            
+            border-radius: 100%;  
+            -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+            animation: sk-scaleout 1.0s infinite ease-in-out;
+        }
+        
+        @-webkit-keyframes sk-scaleout {
+            0% { -webkit-transform: scale(0) }
+            100% {
+                -webkit-transform: scale(1.0);
+                opacity: 0;
+            }
+        }
+        
+        @keyframes sk-scaleout {
+            0% { 
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            } 100% {
+                -webkit-transform: scale(1.0);
+                transform: scale(1.0);
+                opacity: 0;
+            }
+        }
+    
+    }
+    
+    #background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url('/images/bg blur-min.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+    }
+    
+    #overlay {
+        position: absolute;
+        width: calc(100% - 80px);
+        height: calc(100% - 80px);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: rgba(0,0,0,0.4);
+    }
+
+    #logo {
+        margin-top: -70px;
+        width: 300px;
+    }
+    
+    #mainbtn {
+        font: 1.3rem 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #fff;
+        font-size: 2em;
+    }
+
+}
