@@ -8,7 +8,8 @@ if (window.page == 'ep') {
             navigation: false,
             verticalCentered: true,
             // keyboardScrolling: false,
-            normalScrollElements: '#about .descholder',
+            normalScrollElements: 'div.descholder, .section',
+            normalScrollElementTouchThreshold: 0,
             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
 
             afterLoad: (origin, destination) => {
@@ -23,14 +24,15 @@ if (window.page == 'ep') {
 
         });
         
-        fp.setMouseWheelScrolling(false);
+        // fp.setMouseWheelScrolling(false);
         fp.setAllowScrolling(false);
         fp.setRecordHistory(true);
 
         if (typeof error !== 'undefined' ) fp.silentMoveTo(3);
         
         if (typeof postsuccess !== 'undefined') {
-            $('#success').removeClass('d-none')
+            $('.section').removeClass('d-none')
+            $('.section:not(#success)').hide()
             fp.silentMoveTo(4)
         }
 
