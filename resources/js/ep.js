@@ -29,7 +29,10 @@ if (window.page == 'ep') {
 
         if (typeof error !== 'undefined' ) fp.silentMoveTo(3);
         
-        if (typeof postsuccess !== 'undefined') fp.silentMoveTo(4);
+        if (typeof postsuccess !== 'undefined') {
+            $('#success').removeClass('d-none')
+            fp.silentMoveTo(4)
+        }
 
     });
 

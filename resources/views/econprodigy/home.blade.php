@@ -251,7 +251,7 @@
                 </div>
             </div>
 
-            <div id="success" class="section fp-auto-height fp-auto-height-responsive">
+            <div id="success" class="section fp-auto-height fp-auto-height-responsive d-none">
 
                 <div class="container">
                     <div class="row">
