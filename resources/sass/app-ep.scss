@@ -571,7 +571,9 @@
   margin-top: 0 !important;
 }
 #about .descholder {
-  overflow-y: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling:touch;
   max-height: 50vh;
 }
 #registration form {

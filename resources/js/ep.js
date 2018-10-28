@@ -8,8 +8,7 @@ if (window.page == 'ep') {
             navigation: false,
             verticalCentered: true,
             // keyboardScrolling: false,
-            dragAndMove: true,
-            normalScrollElements: '#registration, #tnc',
+            normalScrollElements: '#about .descholder',
             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
 
             afterLoad: (origin, destination) => {
@@ -25,7 +24,7 @@ if (window.page == 'ep') {
         });
         
         fp.setMouseWheelScrolling(false);
-        // fp.setAllowScrolling(false);
+        fp.setAllowScrolling(false);
         fp.setRecordHistory(true);
 
         if (typeof error !== 'undefined' ) fp.silentMoveTo(3);
