@@ -59,7 +59,7 @@
                         <h2 class="word mb-4">econprodigy</h2>
                         <h3 class="phonetic mb-2">/ɛkəˈn,prɒdɪʤɪ/</h3>
                         <p><em>noun</em></p>
-                        <div>
+                        <div class="descholder text-justify">
                             <p>
                                 EconProdigy is an inter-university Policy Making Competition; the largest of its kind. This is the flagship event of Young Economists’ Forum (YEF) constructed to provide undergraduate level students of the country from every discipline with a platform to actively engage in dialogues revolving around real economic issues and consequentially develop policies that solve them. This year, YEF is back with EconProdigy 4.0, and the theme of this year’s competition is Corporate Social Responsibility in Economic Development. Being a global issue at the centre of much discourse, growing in importance over time, this theme will give the participants an opportunity to stamp their mark on the topic and formulate their own policies to address it. The entire event is evaluated by highly educated individuals both in the fields of academia and business landscape.
                             </p>

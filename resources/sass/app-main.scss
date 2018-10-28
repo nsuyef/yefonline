@@ -40,6 +40,13 @@ html, body {
     margin-bottom: 1rem;
 }
 
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+ }
+
+
+ // CSS for elevated labels
 .form-label-group > input,
 .form-label-group > label {
     padding: var(--input-padding-y) var(--input-padding-x);

@@ -6,8 +6,13 @@ use App\Team;
 use App\Applicant;
 use Illuminate\Http\Request;
 
-class RegisterController extends Controller
+class EconProdigyController extends Controller
 {
+
+    public static function home() {
+        return view('econprodigy/home');
+    }
+
     public static function form(Request $request) {
         $data = $request->all();
 
@@ -58,6 +63,11 @@ class RegisterController extends Controller
 
     }
 
+    public static function admin() {
+        $teams = Team::all();
+        return view('econprodigy/admin')->with('teams',$teams);
+    }
+
     private static function recursiveFind(array $array, $needle) {
         $iterator = new \RecursiveArrayIterator($array);
         $recursive = new \RecursiveIteratorIterator($iterator, \RecursiveIteratorIterator::SELF_FIRST);
@@ -68,6 +78,6 @@ class RegisterController extends Controller
           }
         } 
         return $return;
-      }
+    }
 
 }

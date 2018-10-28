@@ -570,5 +570,37 @@
 #mainbuttons .skew-button {
   margin-top: 0 !important;
 }
-
+#about .descholder {
+  overflow-y: scroll;
+  max-height: 50vh;
+}
+#registration form {
+  min-width: unset !important;
+    width: unset !important;
+}
+.bottom-background, .background::before {
+  display: none;
+}
+#success {
+  .flex-center {
+    display: block;
+  }
+  .mr-5 {
+    margin-right: 0 !important;
+  }
+  .check_mark {
+    margin: auto !important;
+  }
+  .h1 {
+    text-align: center;
+  }
+}
+}
+@media only screen and (max-width: 375px) {
+  #registration .title {
+    font-size: 36px;
+  }
+  button.skew-button {
+    font-size: 24px !important;
+}
 }

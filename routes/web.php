@@ -15,9 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/ep', function () {
-    return view('econprodigy');
-});
-
-Route::post('/ep', 'RegisterController@form');
-
+Route::get('/ep', 'EconProdigyController@home');
+Route::post('/ep', 'EconProdigyController@form');
+Route::get('/ep/admin', 'EconProdigyController@admin');
