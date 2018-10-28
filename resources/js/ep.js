@@ -8,7 +8,7 @@ if (window.page == 'ep') {
             navigation: false,
             verticalCentered: true,
             // keyboardScrolling: false,
-            dragAndMove: false,
+            dragAndMove: true,
             normalScrollElements: '#registration, #tnc',
             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
 
