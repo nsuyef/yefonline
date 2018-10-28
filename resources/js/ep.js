@@ -25,7 +25,7 @@ if (window.page == 'ep') {
         });
         
         fp.setMouseWheelScrolling(false);
-        fp.setAllowScrolling(false);
+        // fp.setAllowScrolling(false);
         fp.setRecordHistory(true);
 
         if (typeof error !== 'undefined' ) fp.silentMoveTo(3);
