@@ -18,3 +18,4 @@ Route::get('/', function () {
 Route::get('/ep', 'EconProdigyController@home');
 Route::post('/ep', 'EconProdigyController@form');
 Route::get('/ep/admin', 'EconProdigyController@admin');
+Route::get('/ep/print', 'EconProdigyController@print');

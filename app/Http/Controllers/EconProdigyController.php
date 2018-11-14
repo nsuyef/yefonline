@@ -68,6 +68,11 @@ class EconProdigyController extends Controller
         return view('econprodigy/admin')->with('teams',$teams);
     }
 
+    public static function print() {
+        $teams = Team::all();
+        return view('econprodigy/print')->with('teams',$teams);
+    }
+
     private static function recursiveFind(array $array, $needle) {
         $iterator = new \RecursiveArrayIterator($array);
         $recursive = new \RecursiveIteratorIterator($iterator, \RecursiveIteratorIterator::SELF_FIRST);
