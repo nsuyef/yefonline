@@ -31,17 +31,17 @@
                 Welcome to NSU YEF
             </div>
 
-            <div class="text-center h4">
+            <!-- <div class="text-center h4">
                 REGISTRATION ONGOING
-            </div>
+            </div> -->
 
-            <div class="text-center"> 
+            <!-- <div class="text-center"> 
                 <a href="/ep">
                     <button id="mainbtn" class="skew-button" type="button">
                         <span>EconProdigy 4.0</span>
                     </button>
                 </a>
-            </div>
+            </div> -->
 
         </div>
     </div>
